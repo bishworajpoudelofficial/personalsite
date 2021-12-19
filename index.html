@@ -21,12 +21,15 @@
         }
 
         .brpclass {
-            width: 400px;
+            width: 390px;
             margin: 5em auto;
             padding: 2em;
             background-color: #fdfdff;
             border-radius: 0.5em;
             box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+        }
+        a{
+            color: orange;
         }
 
         a:link,
@@ -50,22 +53,22 @@
             text-decoration: none;
             border-radius: 50%;
         }
+       
     </style>
 </head>
 
 <body>
     <div class="brpclass">
         <h1>Bishworaj Poudel</h1>
-        <p>Computer programmer who creates app, software and website. I also teach programming and technical class to students.</p>
+        <p>Programmer, Instructor & Content Creator</p>
         <center>
-            <p><a href="#">Join With Me...</a></p>
+            <p style="color:orange;" id="blink"><a target = "_blank" href="https://forms.gle/FR847rddA9X15Nme9">Join Online Class [Dart & Flutter] </a></p>
             <a target="_blank" href="https://www.youtube.com/technologychannel" class="fa fa-youtube"></a>
             <a target="_blank" href="https://github.com/bishworajpoudelofficial" class="fa fa-github"></a>
             <a target="_blank" href="https://www.facebook.com/bishworajpoudelofficial/" class="fa fa-facebook"></a>
             <a target="_blank" href="https://www.linkedin.com/in/bishworajpoudelofficial/" class="fa fa-linkedin"></a>
             <a target="_blank" href="https://www.instagram.com/bishworajpoudelofficial/" class="fa fa-instagram"></a>
-            <a target="_blank" href="https://play.google.com/store/apps/dev?id=8260559459657351455"
-                class="fa fa-android"></a>
+            <a target="_blank" href="https://play.google.com/store/apps/dev?id=8260559459657351455" class="fa fa-android"></a>
         </center>
     </div>
 </body>
@@ -95,6 +98,16 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    // For Blink 
+
+    var blink = 
+            document.getElementById('blink');
+  
+        setInterval(function () {
+            blink.style.opacity = 
+            (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000);
 </script>
 
 </html>
